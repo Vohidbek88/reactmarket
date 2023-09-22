@@ -1,0 +1,22 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: lightcoral;
+}
+.logo{
+    font-size: 30px;
+    color: blue;
+    cursor: pointer;
+}
+.real{
+    position: relative;
+}
+.rela span{
+    position: absolute;
+    top: 22px;
+    right: 38px;
+    color: black;
+    font-weight: 900;
+}

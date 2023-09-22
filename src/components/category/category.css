@@ -1,0 +1,22 @@
+.ctgbtn{
+    background-color: aqua;
+    padding: 5px 8px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.ctg{
+    padding: 20px 0;
+    text-align: center;
+}
+.ctgbtn:focus{
+    background-color: rgb(127, 255, 165);
+}
+@media(max-width:768px){
+    .ctgbtn{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}

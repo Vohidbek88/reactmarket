@@ -1,0 +1,56 @@
+.clrel{
+    position: relative;
+}
+.none{
+    position: fixed;
+    top: 0;
+    right: -150%;
+    width: 30vw;
+    height: 95vh;
+    background: linear-gradient(45deg,green,blue);
+    transition: 0.5s ease-in-out;
+}
+.none.active{
+    right: 0;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+.total{
+    padding:50px 20px 10px 20px;
+}
+.buildcart{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    background-color: darkgoldenrod;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+}
+.trsh{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.bybuild{
+    height: 70vh;
+    overflow-y: scroll;
+}
+@media(max-width:768px){
+    .none{
+        width: 80vw;
+    }
+}

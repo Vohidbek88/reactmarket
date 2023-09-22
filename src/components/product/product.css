@@ -1,0 +1,34 @@
+.cart{
+    margin-top: 15px;
+    padding: 8px 12px;
+    width: 290px;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 10px gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+}
+.btnadd{
+    background: linear-gradient(50deg,red,blue);
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 1s ease-in-out;
+}
+.btnadd:focus{
+    background: linear-gradient(45deg,green,white);
+}   
+.korzbtn{
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+.fotrbtn{
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,0 +1,14 @@
+.fotr{
+    background-color: lightcoral;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+@media(max-width:768px){
+    .fotr{
+
+    }
+    .fotr h1{
+        font-size: 16px;
+    }
+}
