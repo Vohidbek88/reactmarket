@@ -3,7 +3,7 @@ import { createContext, useReducer } from "react";
 const initalValue = {
   data: [],
   opcls: false,
-  buyproduct: [],
+  buyproduct: JSON.parse(localStorage.getItem('cart')) || [],
 };
 
 export const Context = createContext();

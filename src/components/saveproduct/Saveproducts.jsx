@@ -10,6 +10,7 @@ const Saveproducts = () => {
   let count = state.buyproduct.reduce((item, qual) => {
     return item + qual.quanity;
   }, 0);
+  localStorage.setItem('cart',JSON.stringify(state.buyproduct)) || []
   return (
     <div className={`none ${state.opcls ? "active" : ""}`}>
       <div className="clrel">

@@ -2,6 +2,8 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { Context } from "../context";
 import './category.css'
+import Skeleton from "react-loading-skeleton";
+
 const Category = () => {
     const {dispatch}=useContext(Context)
   useEffect(() => {
@@ -29,13 +31,13 @@ const Category = () => {
     console.log(error.message);
  }
 
+}
 
-  }
   return (
     <div className="ctg">
       {btns.length>0 ? btns.map((item) => {
         return <button key={item} onClick={()=>getItem(item)} className="ctgbtn">{item}</button>;
-      }):<h1>Loading...</h1>}
+      }):<Skeleton width={100} height={30} style={{color:'red',backgroundColor:'red'}}/>}
     </div>
   );
 };

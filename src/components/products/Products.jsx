@@ -3,6 +3,7 @@ import './products.css'
 import { Context } from '../context'
 import Product from '../product/Product'
 
+
 const Products = () => {
     const {state}=useContext(Context)
   return (
